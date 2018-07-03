@@ -1,0 +1,458 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+   
+}
+
+/*-----------------------------Start loading Section----------------------------*/
+
+.loading {
+    background: #d35400;
+    color: #FFF;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    -webkit-transition: background-color 0.6s ease-in-out 0s;
+    transition: background-color 0.6s ease-in-out 0s;
+}
+.sk-cube-grid {
+    width: 60px;
+    height: 60px;
+    margin: 300px auto;
+}
+.sk-cube-grid .sk-cube {
+    width: 33%;
+    height: 33%;
+    background-color: #FFF;
+    float: left;
+    -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+}
+.sk-cube-grid .sk-cube1 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube2 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube3 {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+.sk-cube-grid .sk-cube4 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube5 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+.sk-cube-grid .sk-cube6 {
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+.sk-cube-grid .sk-cube7 {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.sk-cube-grid .sk-cube8 {
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+.sk-cube-grid .sk-cube9 {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+@-webkit-keyframes sk-cubeGridScaleDelay {
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+@keyframes sk-cubeGridScaleDelay {
+    0%,
+    70%,
+    100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+    }
+    35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+    }
+}
+
+/*-----------------------------end loading Section----------------------------*/
+
+
+/*-----------------------------Start Navbar Section----------------------------*/
+
+.navbar-nav > li > a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 25px;
+    font-weight: bold
+}
+.navbar-brand {
+    line-height: 35px
+}
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+    font-size: 28px;
+}
+.navbar-inverse .navbar-brand >span {
+    color: #FF8B38;
+    font-weight: bold
+}
+.navbar-inverse {
+    border-color: #7F7F7F;
+}
+.navbar-brand {
+    font-family: 'Nova Slim', cursive;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #FF8B38
+}
+
+/*-------------------------------End Navbar Section-----------------------------------*/
+
+
+/*-------------------------------Start header Section-----------------------------------*/
+
+.header .hearer-img {
+    background-image: url(../images/header/header-img.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden
+}
+@media (max-width:767px){
+    .header .hearer-img {height: 1000px}
+}
+.header .hearer-img .img-overlay {
+    background-color: rgba(0, 0, 0, 0.49);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header .hearer-img .h-logoside {
+    margin-top: 130px;
+    color: #FFF;
+    font-family: 'Varela Round', sans-serif;
+}
+.header .hearer-img .h-logoside img {
+    width: 200px
+}
+.header .hearer-img .h-logoside h1 {
+    text-transform: uppercase
+}
+.header .hearer-img .h-logoside .divider {
+    width: 20%;
+    height: 2px;
+    background: #FFF;
+    margin: 20px 0
+}
+.header .hearer-img .h-logoside p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px
+}
+
+/*Search Box start*/
+
+.header .hearer-img .search-box {
+    margin-top: 98px;
+    width: 324px;
+    background-color: rgba(255, 255, 255, 0.53);
+    margin-left: auto;
+    border-radius: 2px;
+}
+@media (max-width:767px){
+    .header .hearer-img .search-box {margin-top: 0;margin: auto}
+    
+}
+.header .hearer-img .search-box h3,
+.header .hearer-img .search-box form button {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.54);
+    font-weight: bold;
+    text-transform: capitalize
+}
+.header .hearer-img .search-box .inputs {
+    padding: 6px 23px
+}
+.header .hearer-img .search-box form select,
+.header .hearer-img .search-box form input {
+    border-bottom: 2px solid #d6cdcd;
+    box-shadow: none;
+    border-radius: 0;
+    color: #666;
+    margin-bottom: 5px;
+}
+.header .hearer-img .search-box form input {
+    color: #666;
+    width: 100%
+}
+.header .hearer-img .search-box form button {
+    background-color: #FF8B38;
+    color: #FFF;
+    font-size: 20px
+}
+
+/*-------------------------------End header Section-----------------------------------*/
+
+
+/*-------------------------------start social-media Section-----------------------------------*/
+
+.social-media {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #F5F5F5;
+    box-shadow: 2px 1px 4px 0px #6666666e;
+}
+.social-media .social-data h2 {
+    margin-top: 0;
+    font-weight: bold
+}
+.social-media .social-icons i {
+    margin-right: 8%;
+    color: #CCCCCC;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    line-height: 1.2
+}
+.social-media .social-icons .fa-facebook:hover {
+    color: #3b5998
+}
+.social-media .social-icons .fa-twitter:hover {
+    color: #1da1f2
+}
+.social-media .social-icons .fa-google-plus:hover {
+    color: #dd4b39
+}
+.social-media .social-icons .fa-youtube:hover {
+    color: #ff0000
+}
+.social-media .social-icons .fa-instagram:hover {
+    color: #c13584
+}
+@media (max-width:767px){
+    
+    .social-media .social-icons i {font-size: 2em}  
+}
+
+/*-------------------------------End social-media Section-----------------------------------*/
+
+
+/*-------------------------------start latest-offers Section-----------------------------------*/
+
+.latest-offers {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.divider-color {
+    width: 20%;
+    height: 2px;
+    background: #FF8B38;
+    margin: 0 auto 30px auto
+}
+.latest-offers h1,
+.hot-offers h1,
+.partner h1 {
+    font-weight: bold
+}
+
+/*offer-card Start*/
+
+.offer-card {
+    margin-bottom: 30px
+}
+.offer-card .card-container {
+    border: 1px solid #dedede;
+    padding: 0 35px
+}
+.offer-card h3 {
+    text-align: left
+}
+.offer-card .offer-details .offer-price {
+    background-color: #4DC7EC;
+    width: 100%;
+    padding: 1px 0;
+    color: #FFF;
+}
+.offer-card .offer-img {
+    position: relative
+}
+.offer-card .offer-img .status {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 29%;
+    height: 15%;
+    background-color: #FF8B38;
+    color: #FFF
+}
+.offer-card .offer-details .offer-price span {
+    font-size: 15px
+}
+.PRL {
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 20px
+}
+.offer-card .offer-details .more-details {
+    text-align: left;
+    padding: 11px 11px 0 11px
+}
+.offer-card .offer-details .more-details p {
+    color: #8b9293
+}
+.offer-card .downDetails {
+    width: 100%;
+    padding: 8px 0;
+    background: #F5F5F5;
+    border: 1px solid #dedede
+}
+.offer-card .downDetails .part {
+    border-right: 1px solid #dedede
+}
+
+@media (max-width:767px){
+    
+    .offer-card .downDetails {overflow: hidden ; padding: 0}   
+    .offer-card .downDetails .part {border-bottom: 1px solid #dedede;
+        padding: 10px; }
+    .offer-card .downDetails .part_mob {padding: 10px;}
+}
+
+    
+/*-------------------------------End latest-offers Section-----------------------------------*/
+
+
+/*-------------------------------start hot-offersSection-----------------------------------*/
+
+.hot-offers {
+    background-color: #EEE;
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+.hot-offers .hotCard {
+    width: 100%;
+    padding: 5px;
+    background-color: #FFF;
+    margin-bottom: 20px;
+    position: relative
+}
+.hot-offers .hotCard .card-image {
+    position: relative;
+    width: 100%
+}
+.hot-offers .hotCard .card-image .price {
+    position: absolute;
+    bottom: 10px;
+    left: 13px;
+}
+.hot-offers .hotCard .price h3 {
+    color: #FFF;
+    font-weight: bold
+}
+.hot-offers .hotCard img {
+    width: 100%;
+}
+.hot-offers .offer-data {
+    text-align: left;
+    position: relative;
+    padding: 3px;
+    border-bottom: 1px solid #dedede;
+}
+.hot-offers button {
+    background-color: #ff8b38;
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+}
+.hot-offers .hotCard .user-details i {
+    padding: 13px 0;
+}
+
+/*-------------------------------End hot-offers Section-----------------------------------*/
+
+
+/*-------------------------------Start Partner Section-----------------------------------*/
+.partner {padding: 20px 0;}
+.carousel-wrap {
+    margin: auto;
+    padding: 0 5%;
+    width: 95%;
+    position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+
+.owl-carousel .item {
+    position: relative;
+    z-index: 100;
+    -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+
+.owl-nav > div {
+    margin-top: -26px;
+    position: absolute;
+    top: 50%;
+    color: #cdcbcd;
+}
+.owl-nav i {
+    font-size: 52px;
+}
+.owl-nav .owl-prev {
+    left: -30px;
+}
+.owl-nav .owl-next {
+    right: -30px;
+}
+
+/*-------------------------------End Partner Section-----------------------------------*/
+/*-------------------------------Start footer Section-----------------------------------*/
+.footer {background-color: #222 ;padding: 30px 0 0 0 ; color: #FFF}
+.footer h3 {font-family: 'Varela Round', sans-serif ;font-weight: bold;font-size: 30px}
+.footer p {color: #888 ;}
+.footer h4 {font-weight: bold ; margin-bottom: 20px}
+.footer h5 {color: #888}
+.footer .copyright {padding:20px 0 ; background-color: #111}
+
+@media (max-width:767px){
+    .text-centering {text-align: center}}
+/*-------------------------------End footer Section-----------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
